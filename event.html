@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>hello</h1>
+    <h2>photo</h2>
+    <h3>macha</h3> -->
+   <!-- <img src=./4711267.jpg  width=100px height=100px> -->
+
+    <script>
+//    var h1get=document.getElementsByTagName("h1");
+//     h1get[0].addEventListener("click",peddi);
+
+//     var h2get=document.getElementsByTagName("h2");
+//     h2get[0].addEventListener("click",peddi1);
+
+//     var h3get=document.getElementsByTagName("h3");
+//     h3get[0].addEventListener("click",peddi2);
+
+
+  
+     
+//             function peddi(){
+              
+
+//                 h1get[0].innerHTML="<img src=./4711267.jpg  width=100px height=100px>"
+
+
+//       }
+
+//       function peddi1(){
+              
+
+//               h2get[0].innerHTML="<img src=./4711267.jpg  width=100px height=100px>"
+
+
+//     }
+
+//     function peddi2(){
+              
+
+//               h3get[0].innerHTML="<img src=./4711267.jpg  width=100px height=100px>"
+
+
+//     }
+
+
+
+var l=document.createElement("div");
+    
+    l.setAttribute("style","margin-top:70px;margin-left:280px;   border:2px solid;width:440px;height:300px;  box-shadow: 0 4px 8px 0 , 0 6px 20px 0 rgba(0, 0, 0, 0.19);");
+
+    document.body.appendChild(l);
+   
+    n=document.createElement("img")
+    n.setAttribute("src","./ford2.jpg");
+    n.setAttribute("style","width:440px;height:300px;")
+    l.appendChild(n)
+    // n.setAttribute("src","")
+
+
+
+    var a=document.createElement("div");
+     a.setAttribute("style","margin-top:100px;margin-left:290px;border:2px solid;width:430px;height:140px");
+
+    document.body.appendChild(a);
+
+    var b=document.createElement("img");
+    b.setAttribute("src",("./ford1.jpg"));
+    b.style.width="100px"
+    b.style.height="140px"
+    
+    a.appendChild(b);
+    b.addEventListener("click",suri0);
+
+
+    var c=document.createElement("img");
+    c.setAttribute("src","./ford3.jpg");
+    // c.setAttribute("src",("./peddi.jpg"));
+    // c.style.width="100px"
+    // c.style.height="140px"
+    c.setAttribute("style","margin-left:10px;width:100px;height:140px")
+    c.addEventListener("click",suri1);
+    
+    a.appendChild(c);
+
+    var d=document.createElement("img");
+    d.setAttribute("src",("./ford4.jpg"));
+    // d.style.width="100px"
+    // d.style.height="140px"
+    d.setAttribute("style","margin-left:10px;width:100px;height:140px")
+    d.addEventListener("click",suri2);
+    a.appendChild(d);
+
+    var e=document.createElement("img");
+    e.setAttribute("src","./ford5.jpg");
+    // e.setAttribute("src",("./peddi.jpg"));
+    e.addEventListener("click",suri3);
+    e.setAttribute("style","margin-left:10px;width:100px;height:140px")
+    // e.style.width="100px"
+    // e.style.height="140px"
+   
+    a.appendChild(e);
+
+
+    function suri0(){
+              
+
+            //   b.innerHTML="<img src=./4711267.jpg  width=100px >"
+              n.setAttribute("src","./ford1.jpg")
+              n.setAttribute("style","width:440px;height:300px;")
+
+    }
+
+    function suri1(){
+              
+        n.setAttribute("src","./ford3.jpg")
+        n.setAttribute("style","width:440px;height:300px;")
+              
+
+    }
+
+    function suri2(){
+              
+
+        n.setAttribute("src","./ford4.jpg")
+        n.setAttribute("style","width:440px;height:300px;")
+
+
+    }
+
+    function suri3(){
+              
+
+        n.setAttribute("src","./ford5.jpg")
+        n.setAttribute("style","width:440px;height:300px;")
+
+
+    }
+
+
+
+    
+
+
+    var m=document.createElement("h2")
+    m.innerText=("Ford1")
+    document.body.appendChild(m);
+    // m.setAttribute("style"," position: relative;animation-name: example;animation-duration: 4s;animation-iteration-count: 2;")
+    m.addEventListener("click",mama);
+
+
+    function mama(){
+
+        m.innerHTML="<img src=./ford1.jpg  width=400px height=250px >"
+        //  m.src="./ford1.jpg"
+        // m.setAttribute("style","@keyframes example { 0%   {width:400px;heigt:250px; transform: rotate(60deg)} 100%{width:500px;heigt:350px; transform: rotate(180deg)}}")
+    }
+
+
+    var q=document.createElement("h2")
+    q.innerText=("Ford2")
+    document.body.appendChild(q);
+    // m.setAttribute("style"," position: relative;animation-name: example;animation-duration: 4s;animation-iteration-count: 2;")
+    q.addEventListener("click",mama1);
+
+
+    function mama1(){
+
+        q.innerHTML="<img src=./ford2.jpg  width=400px height=250px >"
+        //  m.src="./ford1.jpg"
+        // m.setAttribute("style","@keyframes example { 0%   {width:400px;heigt:250px; transform: rotate(60deg)} 100%{width:500px;heigt:350px; transform: rotate(180deg)}}")
+    }
+
+
+
+    var v=document.createElement("h2")
+    v.innerText=("Ford3")
+    document.body.appendChild(v);
+    // m.setAttribute("style"," position: relative;animation-name: example;animation-duration: 4s;animation-iteration-count: 2;")
+    v.addEventListener("click",mama2);
+
+
+    function mama2(){
+
+        v.innerHTML="<img src=./ford3.jpg  width=400px height=250px >"
+        //  m.src="./ford1.jpg"
+        // m.setAttribute("style","@keyframes example { 0%   {width:400px;heigt:250px; transform: rotate(60deg)} 100%{width:500px;heigt:350px; transform: rotate(180deg)}}")
+    }
+
+
+
+// var h=document.createElement("img")
+// h.setAttribute("src","./peddi.jpg");
+// h.style.width="100px";
+// document.body.appendChild(h);
+// h.addEventListener("click",hello);
+
+
+// function hello(){
+//     // h.innerHTML="<img src=./4711267.jpg  width=100px >"
+//     h.setAttribute("src","./4711267.jpg");
+//     // h.style.width="100px";
+  
+// }
+
+
+    
+
+
+
+    </script>
+</body>
+</html>
